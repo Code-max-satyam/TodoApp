@@ -1,73 +1,98 @@
-# React + TypeScript + Vite
+# 📝 Modern Todo App (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautifully designed and fully functional **Todo App** built with **React**, **TypeScript**, and **Vite**.  
+It allows users to add, delete, and mark tasks as completed — all with **localStorage persistence** and a **modern glassy animated UI**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+✅ Add new todos  
+✅ Mark tasks as completed or active  
+✅ Delete tasks  
+✅ Data saved in localStorage (persists after reload)  
+✅ Smooth animations and gradient glassmorphic design  
+✅ Filter tasks by **All**, **Active**, and **Completed**  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Technology | Purpose |
+|-------------|----------|
+| ⚛️ React + TypeScript | Frontend UI |
+| 🧭 React Router | Navigation |
+| 💾 localStorage | Persistent data |
+| 🎨 CSS (Custom Styling) | Modern glassmorphic UI |
+| ⚡ Vite | Lightning-fast build tool |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🖼️ Preview
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Here’s a quick look at the interface 👇  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<img width="1912" height="971" alt="Screenshot 2025-10-29 212704" src="https://github.com/user-attachments/assets/6f1a736a-f772-4f7a-93bd-37a10e33e910" />
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🏗️ Folder Structure
+
+📂 todo-app/
+┣ 📂 src/
+┃ ┣ 📂 components/
+┃ ┃ ┣ 📜 AddTodo.tsx
+┃ ┃ ┣ 📜 Navbar.tsx
+┃ ┃ ┣ 📜 Todos.tsx
+┃ ┣ 📂 store/
+┃ ┃ ┗ 📜 Todos.tsx
+┃ ┣ 📜 App.tsx
+┃ ┣ 📜 main.tsx
+┃ ┣ 📜 index.css
+┗ 📜 package.json
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Code-max-satyam/TodoApp
+cd todo-app
+2️⃣ Install Dependencies
+bash
+Copy code
+npm install
+3️⃣ Run the App
+bash
+Copy code
+npm run dev
+Now open your browser at http://localhost:5173
+
+🧩 Build for Production
+bash
+Copy code
+npm run build
+The optimized build will be generated inside the dist/ folder.
+
+🌈 UI Design Highlights
+Gradient pastel background
+
+Soft shadows and glass blur effect
+
+Animated buttons and hover transitions
+
+Responsive layout for modern look
+
+🤝 Contributing
+Pull requests are welcome!
+If you have ideas for improving UI or adding features, feel free to open an issue or submit a PR.
+
+🧑‍💻 Author
+Satyam
+💼 satyam10april02@gmail.com
+
