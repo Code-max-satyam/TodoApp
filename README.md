@@ -28,6 +28,11 @@ It allows users to add, delete, and mark tasks as completed — all with **local
 
 ---
 
+## Live Demo 
+
+https://todo-app-type.vercel.app/
+
+
 ## 🖼️ Preview
 
 Here’s a quick look at the interface 👇  
