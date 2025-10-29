@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  background: linear-gradient(135deg, #e0f7fa, #d1c4e9, #fce4ec);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 8rem;
+  gap: 2rem;
+}
+
+/* TITLE */
+main h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #1a1a1a;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+main h2::after {
+  content: '';
+  display: block;
+  width: 4.5rem;
+  height: 0.35rem;
+  background: #68B984;
+  margin: 0.8rem auto 0;
+  border-radius: 10px;
+}
+
+/* NAVBAR */
+nav {
+  width: 55rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 1.2rem;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+}
+
+nav a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #555;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(104, 185, 132, 0.2);
+  color: #68B984;
+}
+
+nav a.active {
+  color: #fff;
+  background-color: #68B984;
+  box-shadow: 0 3px 10px rgba(104, 185, 132, 0.4);
+}
+
+/* FORM */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 2rem 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  gap: 1.6rem;
+}
+
+form input {
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  width: 38rem;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+  background: #fff;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  box-shadow: 0 0 0 2px #68B984;
+}
+
+form button {
+  padding: 1rem 2.8rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #68B984;
+  color: #fff;
+  letter-spacing: 0.05rem;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(104, 185, 132, 0.4);
+}
+
+/* TASK LIST */
+.main-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.main-task li {
+  display: grid;
+  grid-template-columns: 0.4fr 2fr 0.7fr;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  width: 50rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.4s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+.main-task li:hover {
+  transform: scale(1.02);
+}
+
+.main-task li input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #D14D72;
+  opacity: 0.7;
+}
+
+.main-task li label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.main-task li button {
+  padding: 0.8rem 1.6rem;
+  background-color: #D14D72;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main-task li button:hover {
+  background-color: #ff7b9a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(209, 77, 114, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
