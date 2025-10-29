@@ -40,17 +40,29 @@ Here’s a quick look at the interface 👇
 ## 🏗️ Folder Structure
 
 📂 todo-app/
+
 ┣ 📂 src/
+
 ┃ ┣ 📂 components/
+
 ┃ ┃ ┣ 📜 AddTodo.tsx
+
 ┃ ┃ ┣ 📜 Navbar.tsx
+
 ┃ ┃ ┣ 📜 Todos.tsx
+
 ┃ ┣ 📂 store/
+
 ┃ ┃ ┗ 📜 Todos.tsx
+
 ┃ ┣ 📜 App.tsx
+
 ┃ ┣ 📜 main.tsx
+
 ┃ ┣ 📜 index.css
+
 ┗ 📜 package.json
+
 
 yaml
 Copy code
